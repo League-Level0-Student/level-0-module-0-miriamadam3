@@ -12,12 +12,17 @@ public class RobotSpiral {
 	public static void main(String[] args) {
 		
 		// Create a new Robot
-		
+		Robot rob=new Robot();
 		// Set your robot's pen down 
-		
+		rob.penDown();
 		// SPEED. Set the robot to go at max speed (100)
-		
+		rob.setSpeed(50);
         // LOOP. Use a for loop to repeat ALL the following lines of code 50 times. 
+		for(int i = 0; i < 50; i++) {
+			rob.setRandomPenColor();
+		rob.move(5*i);
+		rob.turn(360/7);
+		rob.turn(90);
 		
 				// Change the robot pen color to random
 			
@@ -28,7 +33,7 @@ public class RobotSpiral {
 			
 				// Change the robot pen width to (i)
 
-		
+		}
 		// Check the pattern against the picture in the recipe. If it matches, you are done!
 		
 	}
