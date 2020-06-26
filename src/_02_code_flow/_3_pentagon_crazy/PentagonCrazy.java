@@ -5,14 +5,12 @@ package _02_code_flow._3_pentagon_crazy;
  */
 
 import org.jointheleague.graphical.robot.Robot;
-import java.awt.Color;
-
-public class PentagonCrazy {
+import java.awt.Color;public class PentagonCrazy {
 	
 	private void drawPattern() {
 		
 		//  Create a new Robot
-		Robot rob=new robot();
+		Robot rob=new Robot();
 
 		//  Put the robot's pen down
 		rob.penDown();
@@ -20,18 +18,23 @@ public class PentagonCrazy {
 		//  SPEED. Make the robot go at maximum speed (100)
 rob.setSpeed(100);
 		//  COLOR. Set the pen to a color that you like for the shape
-rob.
+rob.setPenColor(Color.red);
 		//  NUMBER OF SIDES. Make an int variable for the number of sides the shape has.
 		//  				(Hint: its called PentagonCrazy)
-
+int side1=5;
+int turnangle=72;
 		//  TURN ANGLE. Make another int variable for the angle you want the robot to turn. 
 		//  			Hint: Divide 360 by the number of sides the shape has.
 
 		//  LOOP. Use a for loop to repeat ALL the following lines of code 200 times. 
-		
+for(int i = 0; i < 150; i++) {
+	
+
 				//  DRAW.  Make the robot move "i" pixels
 				//         "i" is the variable in the for loop
-		
+		rob.move(i);
+		rob.turn(turnangle+1);
+}
 				//  TURN.  Turn the robot the amount in your angle variable + 1
 
 
