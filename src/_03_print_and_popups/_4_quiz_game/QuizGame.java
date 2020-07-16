@@ -17,14 +17,38 @@ public class QuizGame {
 			if(answer.equals("4")) {
 				System.out.println("true");
 				baseScore++;
-			}	
+			}	else {
+				JOptionPane.showMessageDialog(null, "false");
+				baseScore--;
+			}
 				
 				answer=JOptionPane.showInputDialog(" What does red and blue make?");	
 			if(answer.equals ("purple")) {
-				System.out.println(true);
+				System.out.println("true");
 				baseScore++;
 			}
-				
+			else {
+				JOptionPane.showMessageDialog(null, "false");
+				baseScore--;
+			}
+				answer=JOptionPane.showInputDialog("What color is the sky");
+				if(answer.contentEquals("blue")) {
+				System.out.println("true");
+				baseScore++;
+				}	
+				else {
+					JOptionPane.showMessageDialog(null, "false");
+					baseScore--;
+				}
+				answer=JOptionPane.showInputDialog("what is 3+5?");
+				if(answer.contentEquals("8")) {
+				System.out.println("true");
+				baseScore++;
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "false");
+					baseScore--;
+				}
 				// 4.  if the user's answer was correct, add one to their score 
 		
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
